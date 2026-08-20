@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff3d6;
+    color: #3b2416;
+}
+
+main {
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+/* HOME PAGE */
+
+.home-page h1 {
+    font-size: 3rem;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    color: #d35400;
+}
+
+.home-page h2 {
+    margin-top: 45px;
+    font-size: 2rem;
+}
+
+
+/* IMAGE PLACEHOLDER */
+
+.image-placeholder {
+    width: 80%;
+    max-width: 900px;
+    height: 400px;
+    margin: 0 auto;
+
+    background: #e8d5b5;
+    border: 5px dashed #a67c52;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #76583c;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+/* REASON CARDS */
+
+.reasons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.reason-card {
+    width: 280px;
+    min-height: 210px;
+
+    padding: 25px;
+    border-radius: 20px;
+
+    background: white;
+    color: #3b2416;
+
+    text-decoration: none;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.reason-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.reason-card span {
+    font-size: 3rem;
+}
+
+.reason-card h3 {
+    font-size: 1.2rem;
+}
+
+.reason-number {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d35400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* REASON PAGES */
+
+.reason-page h1 {
+    font-size: 2.7rem;
+    color: #d35400;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.message {
+    max-width: 700px;
+    margin: 40px auto;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+
+/* BACK BUTTON */
+
+.back-button {
+    display: inline-block;
+    padding: 14px 25px;
+
+    background: #d35400;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: background 0.2s, transform 0.2s;
+}
+
+.back-button:hover {
+    background: #a63f00;
+    transform: scale(1.05);
+}
+
+
+/* PHONE */
+
+@media (max-width: 600px) {
+
+    .home-page h1 {
+        font-size: 2.1rem;
+    }
+
+    .reason-page h1 {
+        font-size: 2rem;
+    }
+
+    .image-placeholder {
+        width: 95%;
+        height: 250px;
+    }
+
+    .reason-card {
+        width: 95%;
+    }
+}
